@@ -1,0 +1,136 @@
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+header nav {
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav a {
+  font-size: 16px;
+  text-decoration: none;
+  color: lightgray;
+  transition: all 1s;
+}
+
+header nav a:hover {
+  font-size: 25px;
+  color: black;
+}
+
+header img {
+  height: 40px;
+}
+
+.section-one {
+  display: flex;
+  justify-content: center;
+}
+
+.section-one div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one div p {
+  margin: 0;
+  padding: 5px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.section-one img {
+  max-width: 100%;
+  height: auto;
+  transition: all 1s;
+}
+
+.section-one img:hover {
+  transform: rotate(360deg);
+}
+
+.section-one a {
+  text-decoration: none;
+  color: purple;
+  font-family: sans-serif;
+  font-size: 30px;
+  border: 3px solid purple;
+  padding: 30px 100px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.section-one a:before {
+  content: "Lambda";
+  color: white;
+  background-color: #f44336;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.section-one a:hover:before {
+  transform: translateY(0);
+}
+
+.section-two {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+
+.section-two div:nth-child(1) {
+  padding: 30px;
+}
+
+.section-t .section-middle {
+  perspective: 1000px;
+}
+.section-middle img {
+  width: 100%;
+  transition: all 1s;
+}
+
+.section-middle img:hover {
+  transform: rotateX(190deg);
+}
+
+.section-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-bottom div:nth-child(1) {
+  width: 30%;
+}
+.section-bottom div:nth-child(2) {
+  width: 30%;
+}
+.section-bottom div:nth-child(3) {
+  width: 30%;
+}
+.section-bottom div:nth-child(3) {
+  width: 30%;
+}
